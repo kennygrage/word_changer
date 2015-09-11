@@ -11,4 +11,8 @@ describe('phraseChanger', function () {
     expect(phraseChanger("Hello there", "hello", "hi")).to.equal("hi there");
   });
 
+  it("Hello there => Hi there", function() {
+    expect(phraseChanger("Hello there", "hello", "Hi")).to.equal("Hi there");
+  });
+
 });
