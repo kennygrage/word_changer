@@ -23,4 +23,8 @@ describe('phraseChanger', function () {
     expect(phraseChanger("Hello there", "there", "there!")).to.equal("Hello there!");
   });
 
+  it("Hello there, how are you? => Hello-there,-how-are-you?", function() {
+    expect(phraseChanger("Hello there, how are you?", " ", "-")).to.equal("Hello-there,-how-are-you?");
+  });
+
 });
