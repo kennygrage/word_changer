@@ -19,4 +19,8 @@ describe('phraseChanger', function () {
     expect(phraseChanger("Hello buddy, how are you?", "there", "buddy")).to.equal("Hello buddy, how are you?");
   });
 
+  it("Hello there => Hello there!", function() {
+    expect(phraseChanger("Hello there", "there", "there!")).to.equal("Hello there!");
+  });
+
 });
